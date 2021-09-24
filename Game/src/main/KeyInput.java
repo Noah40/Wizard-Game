@@ -32,4 +32,10 @@ public class KeyInput extends KeyAdapter {
         if (key == KeyEvent.VK_S) {keys[3] = false;}
   //      if (key == KeyEvent.VK_H) {keys[4] = false;}
     }
+    public void keyTyped(KeyEvent e){
+        int key = e.getKeyCode();
+
+
+    }
+
 }

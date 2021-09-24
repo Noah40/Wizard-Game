@@ -53,7 +53,7 @@ private void setDamage(int amount){
         y += velY;
 
         if(input.keys[4]){
-            game.kills++;
+
         }
 
         if(damageAnim && b < getDamage()){

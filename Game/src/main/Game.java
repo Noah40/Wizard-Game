@@ -16,6 +16,7 @@ public class Game extends Canvas implements Runnable {
 
     //Instances
     public int hpBoss = 3500;
+    BufferedImage fireball;
     private Handler handler;
     private KeyInput input;
     private Camera cam;
@@ -66,7 +67,7 @@ public class Game extends Canvas implements Runnable {
         BufferedImage explosion_one = loader.loadImage("/explosion1.png");
         BufferedImage explosion_two = loader.loadImage("/explosion2.png");
         BufferedImage explosion_three = loader.loadImage("/explosion3.png");
-        BufferedImage fireball = loader.loadImage("/fireball.png");
+         fireball = loader.loadImage("/fireball.png");
         MouseInput m_input = new MouseInput(handler, cam, this, ss, fireball);
 
         ss = new SpriteSheet(sprite_sheet);

@@ -2,13 +2,14 @@ package main;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class Bullet extends GameObject{
+public class BasicBullet extends GameObject{
 
     private final BufferedImage fireball;
 
     private final Handler handler;
+    private int speed = 30;
 
-    public Bullet(float x, float y, ID id, Handler handler, BufferedImage fireball) {
+    public BasicBullet(float x, float y, ID id, Handler handler, BufferedImage fireball) {
         super(x, y, id);
         this.handler = handler;
         this.fireball = fireball;
@@ -30,6 +31,7 @@ public class Bullet extends GameObject{
 
 
     }
+
 
 
 
